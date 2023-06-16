@@ -9,6 +9,7 @@ const app = express()
 
 //midlewares
 app.use(express.json())
+app.use(cors())
 
 //routers
 app.use('/breads', breadRoutes)
